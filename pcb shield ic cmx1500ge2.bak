@@ -56,15 +56,15 @@ Text Label 10550 1400 0    60   ~ 0
 AREF
 NoConn ~ 9400 1600
 Text Label 10550 1300 0    60   ~ 0
-A4(SDA)
+A4(SDA)_l
 Text Label 10550 1200 0    60   ~ 0
-A5(SCL)
+A5(SCL)_l
 Text Notes 10850 1000 0    60   ~ 0
 Holes
 Text Notes 8550 750  0    60   ~ 0
 Shield for Arduino that uses\nthe same pin disposition\nlike "Uno" board Rev 3.
 $Comp
-L Connector_Generic:Conn_01x08 P1
+L modul:Conn_01x08_copy P1
 U 1 1 56D70129
 P 9600 1900
 F 0 "P1" H 9600 2350 50  0000 C CNN
@@ -305,41 +305,21 @@ Wire Wire Line
 Wire Wire Line
 	8100 2150 7900 2150
 Wire Wire Line
-	7300 1250 7100 1250
-Wire Wire Line
 	8100 950  8100 1250
 Connection ~ 8100 1250
-Text Label 7100 1250 0    50   ~ 0
-+2V
-Wire Wire Line
-	7300 1650 7600 1650
 $Comp
 L power:GND #PWR0101
 U 1 1 5CC32976
-P 7600 1650
-F 0 "#PWR0101" H 7600 1400 50  0001 C CNN
-F 1 "GND" H 7605 1477 50  0000 C CNN
-F 2 "" H 7600 1650 50  0001 C CNN
-F 3 "" H 7600 1650 50  0001 C CNN
-	1    7600 1650
+P 7600 1700
+F 0 "#PWR0101" H 7600 1450 50  0001 C CNN
+F 1 "GND" H 7605 1527 50  0000 C CNN
+F 2 "" H 7600 1700 50  0001 C CNN
+F 3 "" H 7600 1700 50  0001 C CNN
+	1    7600 1700
 	1    0    0    -1  
 $EndComp
-Connection ~ 7600 1650
-Wire Wire Line
-	7600 1650 7950 1650
 Wire Wire Line
 	7900 3150 7900 3050
-$Comp
-L modul:modul_dc-dc_lm2596 LM2596_1
-U 1 1 5CC48CC0
-P 7600 1050
-F 0 "LM2596_1" H 7625 1115 50  0000 C CNN
-F 1 "modul_dc-dc_lm2596" H 7625 1024 50  0000 C CNN
-F 2 "modul:modul_lvl_dc-dc_lm2596" H 7600 950 50  0001 C CNN
-F 3 "" H 7600 950 50  0001 C CNN
-	1    7600 1050
-	1    0    0    -1  
-$EndComp
 $Comp
 L Power:+5V #PWR0102
 U 1 1 5CC49637
@@ -488,8 +468,6 @@ Wire Wire Line
 Wire Wire Line
 	5700 650  5700 1600
 Wire Wire Line
-	6750 3050 6900 3050
-Wire Wire Line
 	6900 3050 6900 3250
 $Comp
 L power:GND #PWR0105
@@ -574,17 +552,6 @@ Wire Wire Line
 	7050 2250 7300 2250
 Wire Wire Line
 	7100 2150 7300 2150
-$Comp
-L modul:modul_lvl-conveter_cjmcu TXS0108E-8_1
-U 1 1 5CC5751F
-P 7050 2250
-F 0 "TXS0108E-8_1" H 7600 2500 50  0000 C CNN
-F 1 "modul_lvl-conveter_cjmcu" V 7600 1900 50  0000 C CNN
-F 2 "modul:modul_lvl_conveter_cjmcu" H 7300 2550 50  0001 C CNN
-F 3 "" H 7300 2550 50  0001 C CNN
-	1    7050 2250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8800 4250 9000 4250
 Text Label 9000 3900 2    50   ~ 0
@@ -639,4 +606,101 @@ F 3 "" H 3850 2250 60  0001 C CNN
 	1    3850 2250
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6650 1550 6650 1450
+Connection ~ 6650 1450
+Wire Wire Line
+	6650 1350 6650 1250
+Connection ~ 6650 1350
+Wire Wire Line
+	6650 1150 6650 1250
+Connection ~ 6650 1250
+Wire Wire Line
+	6650 1050 6650 1150
+Connection ~ 6650 1150
+Wire Wire Line
+	6650 950  6650 1050
+Connection ~ 6650 1050
+Wire Wire Line
+	6650 850  6650 950 
+Connection ~ 6650 950 
+Wire Wire Line
+	6200 1400 6650 1400
+Wire Wire Line
+	6650 1400 6650 1350
+Connection ~ 6200 1400
+Wire Wire Line
+	6650 1450 6650 1400
+Connection ~ 6650 1400
+Wire Wire Line
+	6750 3250 6800 3250
+Wire Wire Line
+	6800 3250 6800 3050
+Wire Wire Line
+	6750 3050 6800 3050
+Wire Wire Line
+	6800 3050 6900 3050
+Connection ~ 6800 3050
+NoConn ~ 5500 1600
+NoConn ~ 5600 1600
+NoConn ~ 5400 3700
+NoConn ~ 5500 3700
+NoConn ~ 5600 3700
+NoConn ~ 5700 3700
+NoConn ~ 5800 3700
+NoConn ~ 5900 3700
+NoConn ~ 6000 3700
+NoConn ~ 6100 3700
+NoConn ~ 6200 3700
+$Comp
+L modul:modul_dc-dc_lm2596 LM2596_1
+U 1 1 5CC48CC0
+P 7650 1050
+F 0 "LM2596_1" H 7675 1115 50  0000 C CNN
+F 1 "modul_dc-dc_lm2596" H 7675 1024 50  0000 C CNN
+F 2 "modul:modul_lvl_dc-dc_lm2596" H 7650 950 50  0001 C CNN
+F 3 "" H 7650 950 50  0001 C CNN
+	1    7650 1050
+	-1   0    0    -1  
+$EndComp
+Text Label 7100 1250 0    50   ~ 0
++2V
+Wire Wire Line
+	7300 1250 7100 1250
+NoConn ~ 3850 2550
+NoConn ~ 4100 3350
+$Comp
+L modul:modul_lvl-conveter_cjmcu TXS0108E-8_1
+U 1 1 5CC5751F
+P 7050 2250
+F 0 "TXS0108E-8_1" H 7600 2500 50  0000 C CNN
+F 1 "modul_lvl-conveter_cjmcu" V 7600 1900 50  0000 C CNN
+F 2 "modul:modul_lvl_conveter_cjmcu" H 7300 2550 50  0001 C CNN
+F 3 "" H 7300 2550 50  0001 C CNN
+	1    7050 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 1650 7600 1650
+Wire Wire Line
+	7600 1700 7600 1650
+Connection ~ 7600 1650
+Wire Wire Line
+	7600 1650 7950 1650
+NoConn ~ 9400 2300
+NoConn ~ 9400 1700
+NoConn ~ 9400 1800
+NoConn ~ 9400 2500
+NoConn ~ 9400 2600
+NoConn ~ 9400 2700
+NoConn ~ 9400 2800
+NoConn ~ 9400 2900
+NoConn ~ 9400 3000
+NoConn ~ 10200 2300
+NoConn ~ 10200 2400
+NoConn ~ 10200 2500
+NoConn ~ 10200 1200
+NoConn ~ 10200 1300
+NoConn ~ 10200 1400
+NoConn ~ 10200 1600
 $EndSCHEMATC

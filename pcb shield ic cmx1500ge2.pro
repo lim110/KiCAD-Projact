@@ -1,4 +1,4 @@
-update=4/24/2019 3:31:59 PM
+update=4/24/2019 11:01:35 PM
 version=1
 last_client=kicad
 [cvpcb]
@@ -12,7 +12,7 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=
+LastNetListRead=pcb shield ic cmx1500ge2.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
