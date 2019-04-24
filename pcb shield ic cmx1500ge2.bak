@@ -38,8 +38,6 @@ Text Label 10550 2700 0    60   ~ 0
 3(**)
 Text Label 10550 2600 0    60   ~ 0
 4
-Text Label 10550 2500 0    60   ~ 0
-5(**)
 Text Label 10550 2400 0    60   ~ 0
 6(**)
 Text Label 10550 2300 0    60   ~ 0
@@ -48,10 +46,8 @@ Text Label 10550 2100 0    60   ~ 0
 8
 Text Label 10550 2000 0    60   ~ 0
 9(**)
-Text Label 10550 1900 0    60   ~ 0
-10(**/SS)
 Text Label 10550 1800 0    60   ~ 0
-11(**/MOSI)
+11(**_MOSI)
 Text Label 10550 1700 0    60   ~ 0
 12(MISO)
 Text Label 10550 1600 0    60   ~ 0
@@ -311,8 +307,6 @@ Wire Wire Line
 Wire Wire Line
 	7300 1250 7100 1250
 Wire Wire Line
-	7100 2150 7300 2150
-Wire Wire Line
 	8100 950  8100 1250
 Connection ~ 8100 1250
 Text Label 7100 1250 0    50   ~ 0
@@ -336,12 +330,12 @@ Wire Wire Line
 Wire Wire Line
 	7900 3150 7900 3050
 $Comp
-L modul:modul_dc-dc_lm2596 LM2596_?
+L modul:modul_dc-dc_lm2596 LM2596_1
 U 1 1 5CC48CC0
 P 7600 1050
-F 0 "LM2596_?" H 7625 1115 50  0000 C CNN
+F 0 "LM2596_1" H 7625 1115 50  0000 C CNN
 F 1 "modul_dc-dc_lm2596" H 7625 1024 50  0000 C CNN
-F 2 "modul:modul_lvl_dc-dc_lm2596" H 7600 950 50  0000 C CNN
+F 2 "modul:modul_lvl_dc-dc_lm2596" H 7600 950 50  0001 C CNN
 F 3 "" H 7600 950 50  0001 C CNN
 	1    7600 1050
 	1    0    0    -1  
@@ -357,19 +351,6 @@ F 3 "" H 8100 950 50  0000 C CNN
 	1    8100 950 
 	1    0    0    -1  
 $EndComp
-$Comp
-L modul:modul_lvl-conveter_cjmcu TXS0108E-8_?
-U 1 1 5CC5751F
-P 7050 2250
-F 0 "TXS0108E-8_?" H 7600 2500 50  0000 C CNN
-F 1 "modul_lvl-conveter_cjmcu" V 7600 1900 50  0000 C CNN
-F 2 "" H 7300 2550 50  0001 C CNN
-F 3 "" H 7300 2550 50  0001 C CNN
-	1    7050 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7050 2250 7300 2250
 Wire Wire Line
 	5800 700  7050 700 
 Wire Wire Line
@@ -377,27 +358,14 @@ Wire Wire Line
 Wire Wire Line
 	7000 650  7000 2350
 Wire Wire Line
-	7000 2350 7300 2350
-Wire Wire Line
 	7050 700  7050 2250
 $Comp
-L U.FL-R-SMT_10_:U.FL-R-SMT(10) J?
-U 1 1 5CC9C483
-P 3750 2250
-F 0 "J?" H 3920 2085 50  0000 L CNN
-F 1 "U.FL-R-SMT(10)" H 3920 1994 50  0000 L CNN
-F 2 "" H 3750 2250 50  0001 L BNN
-F 3 "" H 3750 2250 50  0001 L BNN
-	1    3750 2250
-	-1   0    0    -1  
-$EndComp
-$Comp
-L RF_Module:CXM1500GE U?
+L RF_Module:CXM1500GE U1
 U 1 1 5CC5C1B3
 P 5800 2550
-F 0 "U?" H 5700 4600 50  0000 C CNN
+F 0 "U1" H 5700 4600 50  0000 C CNN
 F 1 "CXM1500GE" H 5700 4500 50  0000 C CNN
-F 2 "" H 4850 3350 50  0001 C CNN
+F 2 "modul:CXM1500GE" H 4850 3350 50  0001 C CNN
 F 3 "" H 4850 3350 50  0001 C CNN
 	1    5800 2550
 	1    0    0    -1  
@@ -512,17 +480,6 @@ F 3 "" H 5050 3850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4400 3050 4750 3050
-$Comp
-L Miscellaneous_Connectors:SMA J?
-U 1 1 5CC5EA1B
-P 4100 3050
-F 0 "J?" H 4208 3315 50  0000 C CNN
-F 1 "SMA" H 4208 3224 50  0000 C CNN
-F 2 "" H 3920 3100 60  0001 C CNN
-F 3 "" H 4100 3050 60  0000 C CNN
-	1    4100 3050
-	1    0    0    -1  
-$EndComp
 Connection ~ 7100 2150
 Wire Wire Line
 	7100 1250 7100 2150
@@ -530,18 +487,6 @@ Wire Wire Line
 	5800 700  5800 1600
 Wire Wire Line
 	5700 650  5700 1600
-Wire Wire Line
-	6750 2450 7300 2450
-Wire Wire Line
-	6750 2550 7300 2550
-Wire Wire Line
-	6750 2650 7300 2650
-Wire Wire Line
-	6750 2750 7300 2750
-Wire Wire Line
-	6750 2850 7300 2850
-Wire Wire Line
-	6750 2950 7300 2950
 Wire Wire Line
 	6750 3050 6900 3050
 Wire Wire Line
@@ -558,8 +503,6 @@ F 3 "" H 7200 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7300 3050 7200 3050
-Wire Wire Line
 	7200 3050 7200 3150
 $Comp
 L power:GND #PWR0106
@@ -570,6 +513,130 @@ F 1 "GND" H 7905 2977 50  0000 C CNN
 F 2 "" H 7900 3150 50  0001 C CNN
 F 3 "" H 7900 3150 50  0001 C CNN
 	1    7900 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Miscellaneous_Devices:SWITCH-DPDT SW1
+U 1 1 5CBF2FF7
+P 8450 3800
+F 0 "SW1" H 8450 4115 50  0000 C CNN
+F 1 "SWITCH-DPDT" H 8450 4024 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 8150 3800 60  0001 C CNN
+F 3 "" H 8450 3800 60  0000 C CNN
+	1    8450 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 2950 8050 2950
+Wire Wire Line
+	7900 2850 8050 2850
+Text Label 10550 2500 0    60   ~ 0
+5(**)
+Wire Wire Line
+	7900 2750 8050 2750
+Wire Wire Line
+	7900 2650 8050 2650
+Wire Wire Line
+	7900 2550 8050 2550
+Wire Wire Line
+	7900 2450 8050 2450
+Wire Wire Line
+	7900 2350 8050 2350
+Wire Wire Line
+	7900 2250 8050 2250
+Wire Wire Line
+	8100 3800 7900 3800
+Wire Wire Line
+	8100 4150 7900 4150
+Wire Wire Line
+	8800 3700 9000 3700
+Wire Wire Line
+	8800 3900 9000 3900
+Wire Wire Line
+	8800 4050 9000 4050
+Wire Wire Line
+	7300 3050 7200 3050
+Wire Wire Line
+	6750 2950 7300 2950
+Wire Wire Line
+	6750 2850 7300 2850
+Wire Wire Line
+	6750 2750 7300 2750
+Wire Wire Line
+	6750 2650 7300 2650
+Wire Wire Line
+	6750 2550 7300 2550
+Wire Wire Line
+	6750 2450 7300 2450
+Wire Wire Line
+	7000 2350 7300 2350
+Wire Wire Line
+	7050 2250 7300 2250
+Wire Wire Line
+	7100 2150 7300 2150
+$Comp
+L modul:modul_lvl-conveter_cjmcu TXS0108E-8_1
+U 1 1 5CC5751F
+P 7050 2250
+F 0 "TXS0108E-8_1" H 7600 2500 50  0000 C CNN
+F 1 "modul_lvl-conveter_cjmcu" V 7600 1900 50  0000 C CNN
+F 2 "modul:modul_lvl_conveter_cjmcu" H 7300 2550 50  0001 C CNN
+F 3 "" H 7300 2550 50  0001 C CNN
+	1    7050 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 4250 9000 4250
+Text Label 9000 3900 2    50   ~ 0
+1(Tx)
+Text Label 9000 4250 2    50   ~ 0
+0(Rx)
+Text Label 8050 2850 2    50   ~ 0
+TX
+Text Label 8050 2750 2    50   ~ 0
+RX
+Text Label 7900 3800 0    50   ~ 0
+RX
+Text Label 7900 4150 0    50   ~ 0
+TX
+Text Label 9000 3700 2    50   ~ 0
+8
+Text Label 9000 4050 2    50   ~ 0
+2
+Text Label 8050 2950 2    50   ~ 0
+4
+Text Label 8050 2450 0    50   ~ 0
+9(**)
+Text Label 8050 2650 0    50   ~ 0
+3(**)
+Text Label 10550 1900 0    60   ~ 0
+10(**_SS)
+Text Label 8050 2550 0    50   ~ 0
+10(**_SS)
+Text Label 8050 2250 0    50   ~ 0
+12(MISO)
+Text Label 8050 2350 0    50   ~ 0
+11(**_MOSI)
+$Comp
+L Miscellaneous_Connectors:SMA J2
+U 1 1 5CC5EA1B
+P 4100 3050
+F 0 "J2" H 4208 3315 50  0000 C CNN
+F 1 "SMA" H 4208 3224 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount" H 3920 3100 60  0001 C CNN
+F 3 "" H 4100 3050 60  0001 C CNN
+	1    4100 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Miscellaneous_Connectors:SMA J1
+U 1 1 5CC050B7
+P 3850 2250
+F 0 "J1" H 3958 2515 50  0000 C CNN
+F 1 "SMA" H 3958 2424 50  0000 C CNN
+F 2 "Connector_Coaxial:U.FL_Molex_MCRF_73412-0110_Vertical" H 3670 2300 60  0001 C CNN
+F 3 "" H 3850 2250 60  0001 C CNN
+	1    3850 2250
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
