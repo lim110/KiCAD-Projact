@@ -775,6 +775,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model D:/fusi/pj01/fusi-kicad-library/3D/Connectors_SMA.3dshapes/SMA_Male_Angled_SMD.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
+    )
   )
 
   (module Connector_Coaxial:U.FL_Molex_MCRF_73412-0110_Vertical (layer F.Cu) (tedit 5A1B5B59) (tstamp 5CC03F8A)
@@ -829,6 +834,11 @@
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model ${KISYS3DMOD}/Connector_Coaxial.3dshapes/U.FL_Hirose_U.FL-R-SMT-1_Vertical.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
     )
   )
 
