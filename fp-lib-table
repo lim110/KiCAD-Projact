@@ -2,4 +2,5 @@
   (lib (name Socket_Arduino_Uno)(type KiCad)(uri "$(KIPRJMOD)/Socket_Arduino_Uno.pretty")(options "")(descr ""))
   (lib (name modul)(type KiCad)(uri ${KIPRJMOD}/modul.pretty)(options "")(descr ""))
   (lib (name Footprints)(type KiCad)(uri D:/fusi/pj01/fusi-kicad-library/Footprints)(options "")(descr ""))
+  (lib (name Switches)(type KiCad)(uri ${KIPRJMOD}/Switches.pretty)(options "")(descr ""))
 )

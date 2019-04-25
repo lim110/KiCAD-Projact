@@ -67,4 +67,5 @@
   (lib (name dc-dc)(type Legacy)(uri "C:/Users/Yusron Muttaqin/Downloads/kicad-library-master/library/dc-dc.lib")(options "")(descr ""))
   (lib (name modul)(type Legacy)(uri "D:/fusi/pj01/pcb/pcb shield ic cmx1500ge2/pcb shield ic cmx1500ge2/modul.lib")(options "")(descr ""))
   (lib (name RF_Module)(type Legacy)(uri ${KIPRJMOD}/RF_Module.lib)(options "")(descr ""))
+  (lib (name Miscellaneous__Devices_dat)(type Legacy)(uri ${KIPRJMOD}/Miscellaneous__Devices_dat.lib)(options "")(descr ""))
 )
