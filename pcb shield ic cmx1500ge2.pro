@@ -1,4 +1,4 @@
-update=4/24/2019 11:01:35 PM
+update=4/25/2019 1:05:07 PM
 version=1
 last_client=kicad
 [cvpcb]
@@ -55,3 +55,15 @@ SolderMaskClearance=0
 SolderMaskMinWidth=0
 SolderPasteClearance=0
 SolderPasteRatio=-0
+[pcbnew/Netclasses]
+[pcbnew/Netclasses/1]
+Name=rf
+Clearance=0.2
+TrackWidth=1.05736
+ViaDiameter=0.6
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
