@@ -1,0 +1,138 @@
+EESchema Schematic File Version 4
+LIBS:sch_txs1080e-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Logic_LevelTranslator:TXS0108EPW U1
+U 1 1 5CFE0590
+P 7850 2800
+F 0 "U1" H 7850 2011 50  0000 C CNN
+F 1 "TXS0108EPW" H 7850 1920 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 7850 2050 50  0001 C CNN
+F 3 "www.ti.com/lit/ds/symlink/txs0108e.pdf" H 7850 2700 50  0001 C CNN
+	1    7850 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5CFE19AA
+P 8600 2150
+F 0 "#PWR0101" H 8600 1900 50  0001 C CNN
+F 1 "GND" H 8605 1977 50  0000 C CNN
+F 2 "" H 8600 2150 50  0001 C CNN
+F 3 "" H 8600 2150 50  0001 C CNN
+	1    8600 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C2
+U 1 1 5CFE2100
+P 8300 2000
+F 0 "C2" V 7985 2000 50  0000 C CNN
+F 1 "0.1u" V 8076 2000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8300 2000 50  0001 C CNN
+F 3 "~" H 8300 2000 50  0001 C CNN
+	1    8300 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8550 2000 8600 2000
+Wire Wire Line
+	8600 2000 8600 2150
+Wire Wire Line
+	8050 2000 7950 2000
+Wire Wire Line
+	7950 2000 7950 2100
+$Comp
+L pspice:CAP C1
+U 1 1 5CFE3777
+P 7350 2000
+F 0 "C1" V 7665 2000 50  0000 C CNN
+F 1 "0.1u" V 7574 2000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7350 2000 50  0001 C CNN
+F 3 "~" H 7350 2000 50  0001 C CNN
+	1    7350 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5CFE4650
+P 7050 2150
+F 0 "#PWR0102" H 7050 1900 50  0001 C CNN
+F 1 "GND" H 7055 1977 50  0000 C CNN
+F 2 "" H 7050 2150 50  0001 C CNN
+F 3 "" H 7050 2150 50  0001 C CNN
+	1    7050 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2000 7050 2000
+Wire Wire Line
+	7050 2000 7050 2150
+Wire Wire Line
+	7600 2000 7650 2000
+Wire Wire Line
+	7750 2000 7750 2100
+$Comp
+L power:+1V8 #PWR0103
+U 1 1 5CFE784F
+P 7750 1600
+F 0 "#PWR0103" H 7750 1450 50  0001 C CNN
+F 1 "+1V8" H 7765 1773 50  0000 C CNN
+F 2 "" H 7750 1600 50  0001 C CNN
+F 3 "" H 7750 1600 50  0001 C CNN
+	1    7750 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 5CFE836F
+P 7950 1600
+F 0 "#PWR0104" H 7950 1450 50  0001 C CNN
+F 1 "+5V" H 7965 1773 50  0000 C CNN
+F 2 "" H 7950 1600 50  0001 C CNN
+F 3 "" H 7950 1600 50  0001 C CNN
+	1    7950 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 1600 7950 2000
+Connection ~ 7950 2000
+Wire Wire Line
+	7750 1600 7750 2000
+Connection ~ 7750 2000
+$Comp
+L power:GND #PWR0105
+U 1 1 5CFE8F04
+P 7850 3900
+F 0 "#PWR0105" H 7850 3650 50  0001 C CNN
+F 1 "GND" H 7855 3727 50  0000 C CNN
+F 2 "" H 7850 3900 50  0001 C CNN
+F 3 "" H 7850 3900 50  0001 C CNN
+	1    7850 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 3900 7850 3500
+Wire Wire Line
+	7450 2400 7450 2100
+Wire Wire Line
+	7450 2100 7650 2100
+Wire Wire Line
+	7650 2100 7650 2000
+Connection ~ 7650 2000
+Wire Wire Line
+	7650 2000 7750 2000
+$EndSCHEMATC

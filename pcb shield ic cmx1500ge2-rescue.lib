@@ -1,0 +1,67 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# HEADER-1X3-Miscellaneous_Connectors
+#
+DEF HEADER-1X3-Miscellaneous_Connectors P 0 40 Y N 1 F N
+F0 "P" -100 200 50 H V L CNN
+F1 "HEADER-1X3-Miscellaneous_Connectors" 0 -200 50 H V C CNN
+F2 "" -150 -100 60 V I C CNN
+F3 "" 0 0 60 H V C CNN
+$FPLIST
+ Pin_Header_1x03*
+ JST-PH_1x03*
+ KK-100_1x03*
+ JST-XH_1x03*
+$ENDFPLIST
+DRAW
+S -100 150 100 -150 0 1 0 f
+X P1 1 -250 100 150 R 50 50 1 1 P
+X PM 2 -250 0 150 R 50 50 1 1 P
+X P3 3 -250 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# HEADER-1X6-Miscellaneous_Connectors
+#
+DEF HEADER-1X6-Miscellaneous_Connectors P 0 30 Y N 1 F N
+F0 "P" -100 350 50 H V L CNN
+F1 "HEADER-1X6-Miscellaneous_Connectors" 0 -350 50 H V C CNN
+F2 "" -150 -100 60 V I C CNN
+F3 "" 0 0 60 H V C CNN
+$FPLIST
+ Pin_Header_1x06*
+ JST-XH_1x06*
+ Pad_Header_1x06*
+$ENDFPLIST
+DRAW
+S -100 300 100 -300 0 1 0 f
+X P1 1 -250 250 150 R 50 50 1 1 P
+X P2 2 -250 150 150 R 50 50 1 1 P
+X P3 3 -250 50 150 R 50 50 1 1 P
+X P4 4 -250 -50 150 R 50 50 1 1 P
+X P5 5 -250 -150 150 R 50 50 1 1 P
+X P6 6 -250 -250 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SMA-Miscellaneous_Connectors
+#
+DEF SMA-Miscellaneous_Connectors J 0 40 Y N 1 F N
+F0 "J" -150 150 50 H V L CNN
+F1 "SMA-Miscellaneous_Connectors" 250 -150 50 H V R CNN
+F2 "" -180 50 60 H I C CNN
+F3 "" 0 0 60 H V C CNN
+$FPLIST
+ SMA*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 0 F
+C 0 0 100 0 1 0 f
+P 2 0 1 0 0 0 100 0 N
+X RF 1 300 0 199 L 50 50 1 1 P
+X GND 2 0 -300 199 U 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+#End Library

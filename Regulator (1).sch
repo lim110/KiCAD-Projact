@@ -1,0 +1,142 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	8250 2050 8250 2100
+Wire Wire Line
+	8300 2050 8250 2050
+Wire Wire Line
+	8950 2050 8950 2100
+Wire Wire Line
+	8900 2050 8950 2050
+$Comp
+L Regulator_Linear:LM1117-ADJ U1
+U 1 1 5CFF5299
+P 8600 2050
+F 0 "U1" H 8600 2249 50  0000 C CNN
+F 1 "LM1117-Adj" H 8600 2166 39  0000 C CNN
+F 2 "" H 8600 2050 50  0001 C CNN
+F 3 "" H 8600 2050 50  0001 C CNN
+	1    8600 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistor:120_0.125W R1
+U 1 1 5CFF91B7
+P 9150 2300
+F 0 "R1" V 9104 2371 50  0000 L CNN
+F 1 "121" V 9195 2371 50  0000 L CNN
+F 2 "" H 9150 2230 30  0001 C CNN
+F 3 "" V 9150 2300 30  0000 C CNN
+	1    9150 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Resistor:1K_0.100W R2
+U 1 1 5CFFA432
+P 9150 2700
+F 0 "R2" V 9100 2750 50  0000 L CNN
+F 1 "Variabel" V 9200 2750 50  0000 L CNN
+F 2 "Resistors:R_Chip_SMD_0603" H 9150 2630 30  0000 C CNN
+F 3 "" V 9150 2700 30  0000 C CNN
+	1    9150 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Power:Earth #PWR0102
+U 1 1 5CFFCC0F
+P 9150 2900
+F 0 "#PWR0102" H 9150 2650 50  0001 C CNN
+F 1 "Earth" H 9150 2750 50  0001 C CNN
+F 2 "" H 9150 2900 50  0000 C CNN
+F 3 "" H 9150 2900 50  0000 C CNN
+	1    9150 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 2100 9850 2100
+Wire Wire Line
+	9650 2100 9150 2100
+Connection ~ 9650 2100
+Wire Wire Line
+	9650 2300 9650 2100
+Connection ~ 9150 2900
+Wire Wire Line
+	9650 2900 9150 2900
+Wire Wire Line
+	9650 2700 9650 2900
+$Comp
+L Capacitor:P-100uF_16V C3
+U 1 1 5CFFB8EF
+P 9650 2500
+F 0 "C3" H 9783 2546 50  0001 L CNN
+F 1 "100uF" H 9650 2400 50  0000 L CNN
+F 2 "Capacitors:C_Ceramic_SMD_0603" H 9650 2485 60  0000 C CNN
+F 3 "" H 9650 2485 60  0000 C CNN
+	1    9650 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 2900 9150 2900
+Connection ~ 9150 2500
+Wire Wire Line
+	9150 2500 8600 2500
+Wire Wire Line
+	8600 2350 8600 2500
+Connection ~ 9150 2100
+Wire Wire Line
+	8950 2100 9150 2100
+Connection ~ 8600 2500
+$Comp
+L Capacitor:P-100uF_16V C2
+U 1 1 5CFF7322
+P 8600 2700
+F 0 "C2" H 8733 2746 50  0001 L CNN
+F 1 "100uF" H 8600 2600 50  0000 L CNN
+F 2 "Capacitors:C_Ceramic_SMD_0603" H 8600 2685 60  0001 C CNN
+F 3 "" H 8600 2685 60  0000 C CNN
+	1    8600 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power:Earth #PWR0101
+U 1 1 5CFF6AA5
+P 8100 2600
+F 0 "#PWR0101" H 8100 2350 50  0001 C CNN
+F 1 "Earth" H 8100 2450 50  0001 C CNN
+F 2 "" H 8100 2600 50  0000 C CNN
+F 3 "" H 8100 2600 50  0000 C CNN
+	1    8100 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2100 7900 2100
+Wire Wire Line
+	8100 2100 8100 2200
+Connection ~ 8100 2100
+Wire Wire Line
+	8250 2100 8100 2100
+$Comp
+L Capacitor:P-10uF_6.3V C1
+U 1 1 5CFF4221
+P 8100 2400
+F 0 "C1" H 8233 2446 50  0001 L CNN
+F 1 "10uf" H 8100 2300 50  0000 L CNN
+F 2 "Capacitors:C_Ceramic_SMD_0603" H 8100 2385 60  0000 C CNN
+F 3 "" H 8100 2385 60  0000 C CNN
+	1    8100 2400
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
