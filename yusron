@@ -1,0 +1,72 @@
+[33mcommit 0fad83f711c805cdd9befc79959c9fa53255d600[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/develop2[m[33m)[m
+Merge: 1d00a54 61a5772
+Author: alim.fusi <muhamadalim.fusi@gmail.com>
+Date:   Wed Sep 25 17:14:48 2019 +0700
+
+    Merge branch 'master' of https://gitlab.com/fusi/sony-cxm1500ge/pcb-shield-mega
+
+[33mcommit 1d00a54f91fc737c56958b161d887ab3ba9c87d1[m
+Author: alim.fusi <muhamadalim.fusi@gmail.com>
+Date:   Wed Sep 25 17:12:23 2019 +0700
+
+    initial commit
+
+[33mcommit 61a5772f4abf6b956009827ab6a3db433c21d2f0[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: husnan <husnan.achmad@gmail.com>
+Date:   Wed Sep 25 10:02:06 2019 +0000
+
+    Add README.md
+
+[33mcommit a94f88b850b22f49df622a867646125f3b24fceb[m
+Author: Yusron Muttaqin <insan5muttaqin2@gmail.com>
+Date:   Thu Apr 25 14:29:16 2019 +0700
+
+    mengubah routing pada jalur sinyal rf agar impedasi 50 ohm dan menambah file duplicate print pcb
+
+[33mcommit 1a6872557e5db678e7eec46cc7b088945dd0fa7b[m
+Author: Yusron Muttaqin <insan5muttaqin2@gmail.com>
+Date:   Thu Apr 25 14:27:32 2019 +0700
+
+    mengubah routing pada jalur sinyal rf agar impedasi 50 ohm dan menambah file duplicate print pcb
+
+[33mcommit 7bb48324655e54ae5ddab6cb6402d89e337786de[m
+Author: Yusron Muttaqin <insan5muttaqin2@gmail.com>
+Date:   Thu Apr 25 11:39:14 2019 +0700
+
+    pengubahan komponen dpdt dan perbaikan routing layer pada rf komponen
+
+[33mcommit 8d67451c86f9e371db6e0b4eae8076c6c9271565[m
+Author: Yusron Muttaqin <insan5muttaqin2@gmail.com>
+Date:   Thu Apr 25 09:35:15 2019 +0700
+
+    penambahan via untuk grounding
+
+[33mcommit 07cc74099ab7b3ebb68f25cdb5dc5af4938228d2[m
+Author: unknown <insan5muttaqin2@gmail.com>
+Date:   Thu Apr 25 01:41:30 2019 +0700
+
+    penambahan komponen 3d
+
+[33mcommit 60ad165b087b64888eb815a389ee3bd7e3349a17[m
+Author: unknown <insan5muttaqin2@gmail.com>
+Date:   Wed Apr 24 23:27:34 2019 +0700
+
+    routing PCB sudah selesai
+
+[33mcommit 2730d05f27b76f2671c7c25fa30487a0ade3fb8a[m[33m ([m[1;32mcabang1[m[33m)[m
+Author: unknown <insan5muttaqin2@gmail.com>
+Date:   Wed Apr 24 19:12:22 2019 +0700
+
+    ada perubahan posisi dari ic cmx1500ge
+
+[33mcommit 52c0e465dd2385e7d103334438a2d64e693088b1[m
+Author: unknown <insan5muttaqin2@gmail.com>
+Date:   Wed Apr 24 18:28:16 2019 +0700
+
+    sampai layout pcb
+
+[33mcommit 05b0268757e415ee8babd650ae627ebd98915e98[m
+Author: unknown <insan5muttaqin2@gmail.com>
+Date:   Tue Apr 23 17:34:27 2019 +0700
+
+    pcb sampai pada skematik dan membuat footprint dari komponen-komponen yang diperlukan

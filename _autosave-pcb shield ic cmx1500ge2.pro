@@ -1,4 +1,4 @@
-update=18/09/2019 10.40.22
+update=05/11/2019 19.38.47
 version=1
 last_client=kicad
 [general]
@@ -239,7 +239,7 @@ dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=power
 Clearance=0.3
-TrackWidth=0.7
+TrackWidth=0.5
 ViaDiameter=0.5
 ViaDrill=0.4
 uViaDiameter=0.3
@@ -261,7 +261,7 @@ dPairViaGap=0.25
 [pcbnew/Netclasses/3]
 Name=rf
 Clearance=0.2
-TrackWidth=2
+TrackWidth=1.9
 ViaDiameter=0.5
 ViaDrill=0.4
 uViaDiameter=0.3
@@ -283,7 +283,7 @@ dPairViaGap=0.25
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=
+PlotDirectoryName=../
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=

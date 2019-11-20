@@ -1,0 +1,50 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>KiCad BOM Example 5</title>
+    </head>
+    <body>
+    <h1>C:\Users\asus\Desktop\Library\pcb_final_atmega\pcb shield ic cmx1500ge2\_autosave-pcb shield ic cmx1500ge2.sch</h1>
+    <p>01/11/2019 11.31.15</p>
+    <p>Eeschema (5.1.2)-2</p>
+    <p><b>Component Count:</b>56</p>
+    <table>
+    <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Footprint</th><th>Description</th><th>Vendor</th></tr>
+    <tr><td>C1, C4</td><td>2</td><td>100uF</td><td>Capacitor:NP-10nF</td><td>Capasitor:C_Ceramic_SMD_0805</td><td></td><td></td></tr>
+    <tr><td>C2, C3, C8, C10</td><td>4</td><td>0.1u</td><td>Capacitor:NP-10nF</td><td>Capasitor:C_Ceramic_SMD_0603</td><td></td><td></td></tr>
+    <tr><td>C5</td><td>1</td><td>10uf</td><td>Capacitor:NP-10nF</td><td>Capasitor:C_Ceramic_SMD_0805</td><td></td><td></td></tr>
+    <tr><td>C6</td><td>1</td><td>1uF</td><td>Capacitor:NP-1uF</td><td>Capasitor:C_Ceramic_SMD_0603</td><td></td><td></td></tr>
+    <tr><td>C7</td><td>1</td><td>NP-1uF</td><td>Capacitor:NP-1uF</td><td>Capasitor:C_Ceramic_SMD_0603</td><td></td><td></td></tr>
+    <tr><td>C9, C11</td><td>2</td><td>10uF</td><td>Capacitor:NP-10nF</td><td>Capasitor:C_Ceramic_SMD_0603</td><td></td><td></td></tr>
+    <tr><td>FB1, FB2</td><td>2</td><td>Ferrite_Bead</td><td>Device:Ferrite_Bead</td><td>Ferrite_Beads:FB_0805</td><td>Ferrite bead</td><td></td></tr>
+    <tr><td>J1</td><td>1</td><td>SMA</td><td>Miscellaneous_Connectors:SMA</td><td>Connectors_SMA:SMA_Male_Angled_TH</td><td></td><td></td></tr>
+    <tr><td>J2</td><td>1</td><td>U.FL</td><td>U.FL-R-SMT_10_:U.FL-R-SMT(10)</td><td>antenna_ufl:ufl_male_smd</td><td></td><td></td></tr>
+    <tr><td>J3, J4</td><td>2</td><td>Conn_01x01_Male</td><td>Connector:Conn_01x01_Male</td><td>Headers:Pin_Header_1x01_Male_10mil_Straight_TH</td><td>Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>MOD1</td><td>1</td><td>ESP32-WROOM-32</td><td>dk_RF-Transceiver-Modules:ESP32-WROOM-32</td><td>digikey-footprints:ESP32-WROOM-32D</td><td>SMD MODULE, ESP32-D0WDQ6, 32MBIT</td><td></td></tr>
+    <tr><td>P1</td><td>1</td><td>Power</td><td>Connector_Generic:Conn_01x06</td><td>Socket_Arduino_Uno:Socket_Strip_Arduino_1x06</td><td>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>P2</td><td>1</td><td>Analog</td><td>Connector_Generic:Conn_01x08</td><td>Socket_Arduino_Uno:Socket_Strip_Arduino_1x08</td><td>Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>P3, P4</td><td>2</td><td>Digital</td><td>Connector_Generic:Conn_01x08</td><td>Socket_Arduino_Uno:Socket_Strip_Arduino_1x08</td><td>Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>P5</td><td>1</td><td>HEADER2x4</td><td>Header-2x4:HEADER2x4</td><td>Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical</td><td></td><td></td></tr>
+    <tr><td>P6</td><td>1</td><td>HEADER-1X6</td><td>Miscellaneous_Connectors:HEADER-1X6</td><td>Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical</td><td></td><td></td></tr>
+    <tr><td>P7</td><td>1</td><td>Communication</td><td>Connector_Generic:Conn_01x08</td><td>Socket_Arduino_Mega:Socket_Strip_Arduino_1x08</td><td>Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>PB1</td><td>1</td><td>BUTTON</td><td>Miscellaneous_Devices:BUTTON</td><td>Push_Buttons:Button_4p_W-6.0mm_L-6.0mm_Normal_SMD</td><td></td><td></td></tr>
+    <tr><td>Q1, Q2, Q3</td><td>3</td><td>BSS138</td><td>dk_Transistors-FETs-MOSFETs-Single:BSS138</td><td>digikey-footprints:SOT-23-3</td><td>MOSFET N-CH 50V 220MA SOT-23</td><td></td></tr>
+    <tr><td>Q4, Q5</td><td>2</td><td>S8050</td><td>Transistor_BJT:S8050</td><td>Package_TO_SOT_THT:TO-92_Inline</td><td>0.7A Ic, 20V Vce, Low Voltage High Current NPN Transistor, TO-92</td><td></td></tr>
+    <tr><td>R1</td><td>1</td><td>150</td><td>Resistor:120_0.125W</td><td>resistor:R_Chip_SMD_0603</td><td></td><td></td></tr>
+    <tr><td>R2</td><td>1</td><td>100</td><td>Resistor:120_0.125W</td><td>resistor:R_Chip_SMD_0603</td><td></td><td></td></tr>
+    <tr><td>R3, R4</td><td>2</td><td>RES</td><td>Miscellaneous_Devices:RES</td><td>resistor:R_Chip_SMD_0402</td><td></td><td></td></tr>
+    <tr><td>R5, R6</td><td>2</td><td>10</td><td>Miscellaneous_Devices:RES</td><td>resistor:R_Chip_SMD_0603</td><td></td><td></td></tr>
+    <tr><td>R7, R8</td><td>2</td><td>DNP</td><td>Resistor:120_0.125W</td><td>resistor:R_Chip_SMD_0603</td><td></td><td></td></tr>
+    <tr><td>R9, R10, R11, R12, R13, R14, R15, R16, R17, R18, R20, R21</td><td>12</td><td>10K</td><td>Resistor:10K_0.100W</td><td>resistor:R_Chip_SMD_0603</td><td></td><td></td></tr>
+    <tr><td>R19</td><td>1</td><td>470</td><td>Resistor:120_0.125W</td><td>resistor:R_Chip_SMD_0603</td><td></td><td></td></tr>
+    <tr><td>U1</td><td>1</td><td>CXM1500GE</td><td>RF_Module:CXM1501GE</td><td>modul:_CXM1501GE</td><td></td><td></td></tr>
+    <tr><td>U2</td><td>1</td><td>TXS0108EPW</td><td>Logic_LevelTranslator:TXS0108EPW</td><td>Packages_SOIC:SSOP-20_4.4x6.5mm_P0.65mm</td><td>Bidirectional  level-shifting voltage translator, TSSOP-20</td><td></td></tr>
+    <tr><td>U3</td><td>1</td><td>AMS1117</td><td>Regulator_Linear:AMS1117</td><td>Package_TO_SOT_SMD:SOT-223-3_TabPin2</td><td>1A Low Dropout regulator, positive, adjustable output, SOT-223</td><td></td></tr>
+    <tr><td>U4</td><td>1</td><td>ADS1115</td><td>Analog_ADC:ADS1115IDGS</td><td>Packages_SOIC:TSSOP-10_3x3mm_P0.5mm</td><td>Ultra-Small, Low-Power, I2C-Compatible, 860-SPS, 16-Bit ADCs With Internal Reference, Oscillator, and Programmable Comparator, VSSOP-10</td><td></td></tr><!--TABLEROW-->
+    </table>
+    </body>
+</html>
+    
